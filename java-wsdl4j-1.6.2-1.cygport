@@ -1,0 +1,13 @@
+JAVA_CLASSPATH="xml-apis.jar"
+inherit ant
+
+DESCRIPTION="Web Services Description Language for Java"
+HOMEPAGE="http://sourceforge.net/projects/wsdl4j/"
+SRC_URI="mirror://sourceforge/wsdl4j/${ORIG_PN}-src-${PV}.zip"
+SRC_DIR="${ORIG_PN}-${PV//./_}"
+
+ANT_BUILD_TARGETS="compile javadocs"
+ANT_INSTALL_JARS="build/lib/wsdl4j*.jar"
+ANT_INSTALL_JAVADOC="build/javadocs"
+
+DOCS="license.html"
